@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progressive Web App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <header>
+      
+            <ul class="navigation">
+                <strong style="color: white;">PWA</strong>
+                <li><a href = "qrScan.html">Test</a></li>
+             
+         
+            </ul>
+        
+    </header>
+    <div class="sidebar">
+        <p style="margin-left: 100px;">ON THIS PAGE</p>
+        <hr>
+        <a href="#main">PWA Definition</a>
+        <a href="#home">Types of mobile apps</a>
+        <a href="#suitable">PWA as the most suitable setup for modern <br>standalone application.</a>
+        <a href="#explore">Explore PWA: Frameworks, Requirements, etc</a>
+        <a href="#good">PWA for QR scanning application</a>
+        <a href="#fidelity">Mid-Fidelity Design (Fidelity 2)</a>
+      </div>
+   
+
+        <body >
+           <div class= "container"> 
+            
+            <div id="main">
+            <h1>
+                What is PWA?
+            </h1>
+            <p>
+                <strong>Progressive Web Application (PWA)</strong> is a type of web app that can operate both as a web page and mobile app on any device. It is a great solution for poor mobile UX and low conversion rates in your online store. Using standard technologies, PWA is aimed at delivering native-like user experience, with speedier conversion and cleaner browsing even with a poor Internet connection. 
+            </p>
+            
+                <img src="images/pwass.png" alt="pwa" width="799" height="509">
+           </div>
+           <div id="home">
+            <h1>
+                Types of Mobile Apps by Technology
+            </h1>
+            <p>
+                There are three basic types of mobile apps if we categorize them by the technology used to code them:
+            </p>
+            <ol>
+                <li><strong>Native Apps:</strong> Applications specifically designed and developed for a particular mobile operating system, like IOS (using Swift/Objective-C) or Android (using Java/Kotlin).</li>
+                    <strong>Pros:</strong>
+                    <ul>
+                        <li>Faster and more reliable in terms of performance.</li>
+                        <li>Access to full device hardware and OS capabilities.</li>
+                        <li>Offline capabilities and rich user experience.</li>
+                    </ul>
+                    <strong>Cons:</strong>
+                    <ul>
+                        <li>Higher development cost as separate codebases are needed for different platforms.</li>
+                        <li>Frequent updates and app store approval cycles.</li>
+                        <li>Takes up space in the device.</li>
+                    </ul>
+                    <br>
+                    <img src="images/Screenshot 2024-10-22 110222.png" alt="native" width="600" height="450">
+                    <br>
+                    <br>
+                <li><strong>Hybrid Apps: </strong>Applications built using web technologies (HTML, CSS, JavaScript) wrapped inside a native container that allows them to run on different platforms with a single codebase (e.g., Cordova, Ionic).</li>
+                    <strong>Pros:</strong>
+                    <ul>
+                        <li>Cross-platform, so they work on multiple platforms with a single codebase.</li>
+                        <li>Quicker/cheaper to build.</li>
+                        <li>Load quickly and less code to maintain.</li>
+                    </ul>
+                    <strong>Cons:</strong>
+                    <ul>
+                        <li>Performance may not be good as native apps.</li>
+                        <li>Limited access to device features compared to native apps.</li>
+                    </ul>
+                    <br>
+                    <img src="images/Screenshot 2024-10-22 110259.png" alt="native" width="600" height="450">
+                    <br>
+                    <br>
+                <li><strong>Progressive Web Apps (PWA): </strong>Web applications that behave like native apps on mobile devices. They are developed using web technologies (HTML, CSS, JavaScript) and provide enhanced functionalities such as offline access, push notifications, and device hardware integration.</li>
+                     <strong>Pros:</strong>
+                    <ul>
+                        <li>Cross-platform compatibility with a single codebase.</li>
+                        <li>No need for app store approvals and updates; updates happen in the background.</li>
+                        <li>Cost-effective development.</li>
+                    </ul>
+                    <strong>Cons:</strong>
+                    <ul>
+                        <li>Limited access to certain native devices features.</li>
+                        <li>Browser-specific behaviour; may not be fully supported on older browsers.</li>
+                    </ul>   
+                    <br>
+                    <img src="images/Screenshot 2024-10-22 110242.png" alt="native" width="600" height="450">
+                    <br>
+            </ol>
+           </div>
+           <div id="suitable">
+            <h1>
+                Why PWA is the most suitable setup for modern standalone application
+            </h1>
+            <ul>
+                <li><strong>Development Cost: </strong>PWAs are highly cost-effective since they are developed once and can run on multiple platforms, unlike native apps that require separate codebases for iOS and Android.</li>
+                <li><strong>Performance: </strong>While native apps offer the best performance, PWAs offer good enough performance for most use cases with modern browser APIs and are improving steadily.</li>
+                <li><strong>Offline Functionality: </strong>Through service workers, PWAs can cache resources and data to work offline or under poor network conditions, which is a key requirement for modern apps.</li>
+                <li><strong>User Experience: </strong>PWAs offer a near-native user experience with features like offline functionality, push notifications, and the ability to be installed on the home screen.</li>
+                <li><strong>Deployment and Updates: </strong>PWAs do not require app store approvals, making deployment and updates seamless, which reduces maintenance overhead compared to native apps.</li>
+            </ul>
+        </div>
+        <div id="explore">
+            <h1>
+                Exploring Progressive Web App
+            </h1>
+            <h2>PWA Frameworks</h2>
+            <ul>
+                <li><strong>React.js:  </strong>Its component-based architecture, along with the support of tools like Create React App and Next.js, empowers developers to create high-performing PWAs.</li>
+                <li><strong>Vue.js: </strong>Known for its simplicity and flexibility, Vue's ecosystem offers tools like Vue CLI, Vue Router, and Vuex, which streamline PWA development.</li>
+                <li><strong>Angular: </strong>AngularJS offers powerful tools, progressive enhancements, TypeScript support, and a library of UI components to help you seamlessly develop a complex web application.</li>
+                <li><strong>Svelte: </strong>Its simplicity and ability to generate lightweight, fast-loading PWAs have made it a rising star in the PWA development landscape.</li>
+            </ul>
+            <h2>Requirements of Files</h2>
+            <h3>A Secure Connection (HTTPS)</h3>
+            <p>For the PWA purposes you need to provide a secure server with a HTTPS connection. This is the way to both protect user data and to build an extra layer of security within your website.</p>
+            <h3>Service Workers</h3>
+            <p>This is one of the key elements of PWA technology, which helps to determine how to handle network requests. A service worker is a client-side JavaScript file added to your codebase, which is working in the background to mimic app-like features.</p>
+            <h3>Manifest File</h3>
+            <p>A JSON file that contains metadata about the app (name, icons, theme color, etc.) and allows the app to be installed on the user’s home screen.</p>
+            <h2>Offline Cache Functional Application Example</h2>
+            <p>A basic PWA that works offline has:</p>
+            <ul>
+                <li><strong>Service Worker: </strong>Registers and caches app shell assets like HTML, CSS, and JavaScript files.</li>
+                <li><strong>IndexedDB or LocalStorage: </strong>Stores user data or session data locally.</li>
+                <li><strong>Workbox: </strong>A powerful Google library that simplifies service worker creation and caching strategies.</li>
+            </ul>
+        </div>
+        <div id="good">
+            <h1>Why PWA is a good fit for an application for QR scanning</h1>
+            <ul>
+                <li><strong>Cross-platform support: </strong>The application can be accessed from any device with a browser, eliminating the need to develop separate native apps.</li>
+                <li><strong>Offline Functionality: </strong>The service worker can cache the resources required for QR code scanning, allowing the app to function offline.</li>
+                <li><strong>Low-cost maintenance: </strong>Since PWA doesn't require native app store distribution and approval processes, it allows faster updates and maintenance with minimal costs.</li>
+            </ul>
+           </div>
+        <div>
+            <h1>
+                Mid-Fidelity Design for Attendance QR scan app
+            </h1>
+            <h2>Purpose of the application</h2>
+            <ul>
+                <li><strong>Primary Use:</strong> Users scan a QR code to mark attendance, even in offline mode.</li>
+                <li><strong>Offline Capability:</strong> The app should cache necessary data and use an offline QR code scanning library.</li>
+            </ul>
+            <h2>Features: </h2>
+            <ol>
+                <li><strong>Home Screen: </strong></li>
+                    <ul>
+                        <li>Scan QR Code Button</li>
+                        <li>Instruction for first-time users.</li>
+                        <li>Option to refresh or sync data when online.</li>
+                    </ul>
+                <li><strong>QR Code Scanner: </strong></li>
+                    <ul>
+                        <li>Integrates an offline QR decoding library (like zxing-js/library).</li>
+                        <li>Once a QR code is scanned, it checks if the user is registered and marks the attendance.</li>
+                        <li>If offline, the app stores the scan data and syncs it when back online.</li>
+                    </ul>
+                <li><strong>Attendance Confirmation: </strong></li>
+                    <ul>
+                        <li>Show a success message after a QR code is successfully scanned.</li>
+                        <li>Store scan history locally and sync when the network is available.</li>
+                    </ul>
+                <li><strong>Settings: </strong></li>
+                    <ul>
+                        <li>Option to clear cached data.</li>
+                        <li>Sync attendance manually.</li>
+                    </ul> 
+            </ol>
+        </div>
+
+
+           </div>
+ 
+        </div>
+ 
+
+            <footer>
+                
+            </footer>
+           </div>
+        </body>
+    </head>
+</html>
