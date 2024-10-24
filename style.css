@@ -1,20 +1,21 @@
 * {
     box-sizing: border-box;
+   
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
+
 
 .container {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    padding: 50px 20px; /* Adjust padding for mobile */
+    font-style: normal;
+    padding-left: 400px;
+
+    padding-top: 50px;
 }
 
 h1 {
-    font-size: 32px; /* Smaller size for mobile */
+    font-size: 40px;
 }
 
 strong {
@@ -26,30 +27,30 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #24252A;
-    width: 100%;
-    padding: 10px 20px; /* Increased padding for better touch targets */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    width: 100%; 
+    padding: 5px 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
 
 .navigation {
+    
     list-style: none;
     font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    width: 100%; /* Spread navigation items */
-    padding: 0 20px;
+
 }
 
 .navigation strong {
-    margin-right: 20px;
+    margin-right: 100px;
+    margin-left: 30px;
 }
 
 .navigation li {
+    margin-left: 1100px;
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0px 20px;
     color: white;
 }
 
@@ -57,92 +58,40 @@ header {
     text-decoration: none;
     color: white;
 }
-
 .sidebar {
-    display: none; /* Hide sidebar for mobile */
-}
+    margin: 0;
+    padding: 100px;
+    height: 100%;
+    margin-left: -70px;
+    position: fixed;
+    overflow: auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    margin-top: 0px;
+  }
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 13px;
+    text-decoration: none;
 
-/* Sidebar styling for larger screens */
-@media (min-width: 768px) {
-    .sidebar {
-        display: block;
-        padding: 100px 20px;
-        height: 100%;
-        width: 250px;
-        position: fixed;
-        left: 0;
-        top: 60px; /* Adjust top offset for fixed header */
-        font-family: "Poppins", sans-serif;
-        font-size: 13px;
-        overflow-y: auto;
-        background-color: #f1f1f1;
-    }
+  }
 
-    .sidebar a {
-        display: block;
-        color: black;
-        padding: 10px;
-        text-decoration: none;
-    }
-}
-
-img {
+  img{
     border-radius: 20px;
-    max-width: 100%; /* Ensure images are responsive */
-    height: auto;
-}
+  }
 
-li {
+  li{
     padding: 5px;
-}
+  }
 
-/* Footer Styling */
-footer {
+  footer {
     background-color: #24252A;
     height: 50px;
-    width: 100%;
+    width: 100%; 
+    min-height: 5%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    color: white;
-}
-
-/* Mobile Responsive Adjustments */
-@media (max-width: 768px) {
-    .container {
-        padding-left: 20px; /* Remove the large padding for mobile */
-        padding-right: 20px;
-        padding-top: 80px; /* Add spacing to account for fixed header */
-    }
-
-    h1 {
-        font-size: 24px; /* Reduce heading size */
-    }
-
-    .navigation {
-        flex-direction: column; /* Stack navigation vertically */
-        align-items: flex-start;
-    }
-
-    .navigation strong {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .navigation li {
-        margin-left: 0;
-        padding: 10px 0; /* Increase padding for easier touch targets */
-    }
-
-    .sidebar {
-        display: none; /* Keep the sidebar hidden on small screens */
-    }
-
-    footer {
-        position: static;
-        margin-top: 20px; /* Ensure footer does not overlap content */
-    }
-}
+    position: absolute;
+    margin: 30px 0 0 -10px;
+    padding: 10px;
+  }
